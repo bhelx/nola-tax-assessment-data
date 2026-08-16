@@ -1,0 +1,20 @@
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# generated data - large, and reproducible via `python -m ingest.pipeline`
+data/raw/
+data/db/
+*.sqlite
+*.sqlite.gz
+*.sqlite3
+*.part
+
+# logs
+logs/
+
+# os / editor cruft
+.DS_Store
+.vscode/
+.idea/
