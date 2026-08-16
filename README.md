@@ -46,11 +46,9 @@ JOIN tax_by_neighborhood_year y2025
  AND y2025.tax_year = 2025
 ORDER BY pct_change DESC;
 ```
-```
-```
 
 
-Results for all 72 neighborhoods are in the table above. Highlights:
+Highlights:
 
 - Biggest increases: Fischer Dev (+15.0%), St. Thomas Dev (+11.8%), Freret (+11.3%), Desire Area (+8.7%), Viavant-Venetian Isles (+7.0%)
 - Biggest decreases: Central Business District (−8.9%), Iberville (−7.1%), Gert Town (−6.8%), West Lake Forest (−5.9%), Gentilly Woods (−4.2%)
@@ -58,7 +56,9 @@ Results for all 72 neighborhoods are in the table above. Highlights:
 
 ## Using the data
 
-The data is compressed and stored at `data/db/nola_tax.sqlite.gz`. Uncompress it and use sqlite3 to query it. If you're
+The data is compressed and stored at `data/db/nola_tax.sqlite.xz` (xz gets it
+under GitHub's 100MB file limit; gzip doesn't). Uncompress it with
+`xz -d data/db/nola_tax.sqlite.xz` and use sqlite3 to query it. If you're
 not super familiar with sql, or sqlite, i'd recommend just using a coding agent like claude or chatgpt and just ask it questions.
 It will write good sql for you.
 

@@ -4,11 +4,10 @@ __pycache__/
 *.pyc
 
 # generated data - large, and reproducible via `python -m ingest.pipeline`
+# the compressed db (data/db/nola_tax.sqlite.xz) IS committed - see README
 data/raw/
-data/db/
-*.sqlite
-*.sqlite.gz
-*.sqlite3
+data/db/*.sqlite
+data/db/*.sqlite3
 *.part
 
 # logs
